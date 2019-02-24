@@ -1,3 +1,5 @@
+# Servers
+alias totaal="ssh -p 4000 tomdep1q@premium10.totaalholding.nl"
 # Unix
 alias -g G="| grep"
 alias -g M="| less"

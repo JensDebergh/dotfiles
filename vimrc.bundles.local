@@ -1,10 +1,1 @@
-Plug 'mustache/vim-mustache-handlebars'
-Plug 'othree/html5.vim'
-Plug 'pangloss/vim-javascript'
-Plug 'scrooloose/nerdtree'
-
-Plug 'rking/ag.vim' " Ag support for vim
-Plug 'tpope/vim-dispatch' " Run tests from within vim
-Plug 'christoomey/vim-tmux-navigator' " Tmux vim awareness
-Plug 'jgdavey/tslime.vim' " Tmux dispatcher
 Plug 'gertjanreynaert/cobalt2-vim-theme'
