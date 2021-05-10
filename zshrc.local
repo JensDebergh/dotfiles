@@ -3,8 +3,13 @@ export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 export PATH="$HOME/.bin:$PATH"
 # Load rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init - zsh --no-rehash)"
 eval "$(rbenv init - --no-rehash)"
 export PATH="$PATH:/usr/local/lib/node_modules"
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+
+eval "$(ssh-agent -s)"
 
 # ==== TMUX ====
 _not_inside_tmux() { [[ -z "$TMUX" ]] }
@@ -15,6 +20,6 @@ ensure_tmux_is_running() {
   fi
 }
 
+
+
 ensure_tmux_is_running
-eval "$(rbenv init - zsh --no-rehash)"
-eval "$(rbenv init - --no-rehash zsh)"
